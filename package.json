@@ -1,5 +1,6 @@
 {
   "name": "monitoring_backend",
+  "productName": "monitoring",
   "version": "1.0.0",
   "description": "",
   "author": "Lucas Manuel Palomo Lauterbach <lucas.palomo@t-online.de>",
@@ -8,13 +9,29 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vue:dev": "cd ./views && poi",
+    "vue:build": "cd ./views && poi build",
+    "vue:report": "cd ./views && poi build --bundle-report",
+    "vue:serve": "cd ./views && serve dist --single",
+    "vue:test": "cd ./views && tyu"
   },
   "dependencies": {
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
     "pino": "^8.7.0",
     "pino-http": "^8.2.1",
-    "pino-pretty": "^9.1.1"
+    "pino-pretty": "^9.1.1",
+    "offline-plugin": "^4.8.0",
+    "normalize.css": "^7.0.0",
+    "object-assign": "^4.1.1",
+    "promise-polyfill": "^6.0.2"
+  },
+  "devDependencies": {
+    "poi": "^9.0.0",
+    "poi-preset-bundle-report": "^2.0.0",
+    "serve": "^6.1.0",
+    "tyu": "^1.0.4",
+    "poi-preset-offline": "^9.0.0"
   }
 }
