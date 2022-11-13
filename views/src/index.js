@@ -1,5 +1,5 @@
 import Vue from "vue";
-import App from "./components/App.vue";
+import Shell from "./components/shell/shell.vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 Vue.config.productionTip = false;
@@ -12,5 +12,5 @@ Vue.use(IconsPlugin);
 
 new Vue({
   el: "#app",
-  render: h => h(App)
+  render: h => h(Shell)
 });
