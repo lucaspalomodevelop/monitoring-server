@@ -8,13 +8,14 @@
   "license": "GPLv3",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/app",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:start": "node ./bin/app",
+    "server:test": "echo \"Error: no test specified\" && exit 1",
     "vue:dev": "cd ./views && poi",
     "vue:build": "cd ./views && poi build",
     "vue:report": "cd ./views && poi build --bundle-report",
     "vue:serve": "cd ./views && serve dist --single",
-    "vue:test": "cd ./views && tyu"
+    "vue:test": "cd ./views && tyu",
+    "start":"yarn vue:build && yarn server:start"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
