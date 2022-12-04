@@ -1,1 +1,0 @@
-CREATE TABLE IF NOT EXISTS 'server' (hostname varchar(50), MAC varchar(50), ip_address varchar(16)  )

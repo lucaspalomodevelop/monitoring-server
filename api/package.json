@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node ./bin/app",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "getfrontend":"cd ../frontend && yarn  "
+    "getfrontend": "cd ../frontend && yarn  "
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
@@ -31,6 +31,7 @@
     "poi": "^9.0.0",
     "poi-preset-bundle-report": "^2.0.0",
     "poi-preset-offline": "^9.0.0",
+    "prisma": "^4.7.0",
     "serve": "^6.1.0",
     "tyu": "^1.0.4"
   }
